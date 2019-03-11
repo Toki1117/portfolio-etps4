@@ -1,0 +1,131 @@
+.body {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+#header {
+    background: yellow;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "logo text"
+}
+
+.logo {
+    background: pink;
+    grid-area: logo;
+}
+
+.logo-img {
+    background: cornflowerblue;
+}
+
+.datos-personales {
+    background: purple;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+}
+
+.container {
+    background: green;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "menu content"
+}
+
+.menu-container {
+   background: plum; 
+   grid-area: menu;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: baseline;
+   justify-items: center;
+}
+
+ul {
+    display:flex;
+    flex-flow:column nowrap;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+  
+li {
+    color: #fff;
+    display: block;
+    float: inherit;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+    
+li a {
+    color: rgb(110, 107, 107);
+    text-decoration: none;
+}
+  
+  li:hover,
+  li:focus-within {
+      background: red;
+      cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+    background: red;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: relative;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: auto;
+  }
+
+  ul li ul li:hover{
+      background:azure;
+      color: gray;
+  }
+
+.content {
+    background: fuchsia;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.project-img {
+    background: palevioletred;
+    align-self: center;
+}
+
+.file {
+    background: rosybrown;
+    align-self: center;
+}
